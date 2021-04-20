@@ -12,7 +12,10 @@ There are multiple ways one could implement this animation, each with its own tr
 
 ### Files changed
 
-`AnimatedNavbar.js` The parent component
-`DropdownContainer/Components.js` Restyled some of the components here for our simplified nav
-`DropdownContents/` Added the content for each nav item here
-`index.css` Added brand font files
+> `AnimatedNavbar.js` The parent component
+
+> `DropdownContainer/Components.js` Restyled some of the components here for our simplified nav
+
+> `DropdownContents/` Added the content for each nav item here
+
+> `index.css` Added brand font files
