@@ -17,6 +17,10 @@ body {
   font-family: -apple-system, system-ui, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: var(--dark-grey);
+  background: #6C247E;
+  /* background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 a {

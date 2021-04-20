@@ -1,13 +1,16 @@
 {
   "name": "react-stripe-menu",
-  "homepage": "http://aholachek.github.io/react-stripe-menu",
+  "homepage": "http://cailborg.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/helper-builder-react-jsx": "^7.12.13",
+    "@babel/helper-define-map": "^7.13.12",
+    "@babel/helper-regex": "^7.10.5",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-flip-toolkit": "latest",
+    "react-flip-toolkit": "^7.0.13",
     "react-scripts": "3.0.1",
     "styled-components": "4.3.2"
   },

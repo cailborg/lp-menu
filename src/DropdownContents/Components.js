@@ -8,32 +8,58 @@ export const Heading = styled.h3`
   margin-bottom: ${props => (props.noMarginBottom ? 0 : "1rem")};
   color: ${({ color }) => (color ? `var(--${color})` : "var(--blue)")};
 `
+export const LPHeading = styled.h3`
+  text-transform: uppercase;
+  font-family: Geograph;
+  font-weight: normal;
+  font-size: 10px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  margin-bottom:24px;
+`
+
 
 export const HeadingLink = Heading.withComponent("li")
 
 export const LinkList = styled.ul`
-  li {
+
+  & > li {
+    display: flex:
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 1rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & > a {
+      display: inline-block;
+      width: calc(100% - 32px);
+      color: #555C7C;
+      font-family: Geograph;
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
 
-  li:last-of-type {
-    margin-bottom: 0;
-  }
-  
-  margin-left: ${props => (props.marginLeft ? props.marginLeft : 0)};
 `
 
 export const Icon = styled.div`
-  width: 13px;
-  height: 13px;
-  margin-right: 13px;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
   background-color: var(--blue);
   opacity: 0.8;
-  display: inline-block;
+  display: inline-flex;
 `
 
 export const DropdownSection = styled.div`
   padding: var(--spacer);
   position: relative;
   z-index: 1;
+  & ul > h3:last-of-type {
+    margin-top: 32px;
+  }
 `

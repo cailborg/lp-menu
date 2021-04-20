@@ -6,7 +6,7 @@ const NavbarItemTitle = styled.button`
   background: transparent;
   border: 0;
   font-weight: bold;
-  font-family: inherit;
+  font-family: Geograph;
   font-size: 18px;
   padding: 2rem 1.5rem 1.2rem 1.5rem;
   color: white;

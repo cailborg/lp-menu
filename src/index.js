@@ -1,13 +1,13 @@
 import React, { Component } from "react"
 import ReactDOM from "react-dom"
 import AnimatedNavbar from "./AnimatedNavbar"
-import DemoControls from "./DemoControls"
 import styled from "styled-components"
 import "./index.css"
 import "normalize.css";
+import "./Geograph/geograph.css";
 
 const AppContainer = styled.div`
-  background: linear-gradient(150deg, #53f 15%, #05d5ff);
+  // background: linear-gradient(150deg, #53f 15%, #05d5ff);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -28,10 +28,6 @@ class App extends Component {
     return (
       <AppContainer>
         <AnimatedNavbar duration={this.state.duration} />
-        <DemoControls
-          duration={this.state.duration}
-          onChange={this.onChange}
-        />
       </AppContainer>
     )
   }

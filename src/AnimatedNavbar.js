@@ -3,14 +3,18 @@ import Navbar from "./Navbar"
 import NavbarItem from "./Navbar/NavbarItem"
 import { Flipper } from "react-flip-toolkit"
 import DropdownContainer from "./DropdownContainer"
-import CompanyDropdown from "./DropdownContents/CompanyDropdown"
-import DevelopersDropdown from "./DropdownContents/DevelopersDropdown"
-import ProductsDropdown from "./DropdownContents/ProductsDropdown"
+import UseCases from "./DropdownContents/UseCases"
+import Company from "./DropdownContents/Company"
+import Product from "./DropdownContents/Product"
+import Insights from "./DropdownContents/Insights"
+import Support from "./DropdownContents/Support"
 
 const navbarConfig = [
-  { title: "Products", dropdown: ProductsDropdown },
-  { title: "Developers", dropdown: DevelopersDropdown },
-  { title: "Company", dropdown: CompanyDropdown }
+  { title: "Product", dropdown: Product },
+  { title: "Company", dropdown: Company },
+  { title: "Use cases", dropdown: UseCases },
+  { title: "Insights", dropdown: Insights },
+  { title: "Support", dropdown: Support }
 ]
 
 export default class AnimatedNavbar extends Component {
